@@ -1,4 +1,4 @@
-import { AngularjsMaterial2GetstartPage } from './app.po';
+import { AngularjsMaterial2GetstartPage } from "./app.po";
 
 describe('angularjs-material2-getstart App', () => {
   let page: AngularjsMaterial2GetstartPage;
