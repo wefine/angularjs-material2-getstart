@@ -5,6 +5,7 @@ import { HttpModule } from "@angular/http";
 import { MdButtonModule, MdCardModule, MdIconModule, MdMenuModule, MdToolbarModule } from "@angular/material";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
+import "hammerjs";
 import { AppComponent } from "./app.component";
 
 @NgModule({
