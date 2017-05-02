@@ -239,6 +239,12 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular2-perfect-scrollbar@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/angular2-perfect-scrollbar/-/angular2-perfect-scrollbar-2.0.6.tgz#07ea29ef66d1efd5538ee52869fcf53320c9e76d"
+  dependencies:
+    perfect-scrollbar "~0.6.0"
+
 ansi-align@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ansi-align/-/ansi-align-1.1.0.tgz#2f0c1658829739add5ebb15e6b0c6e3423f016ba"
@@ -3523,6 +3529,10 @@ pbkdf2@^3.0.3:
   resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.0.9.tgz#f2c4b25a600058b3c3773c086c37dbbee1ffe693"
   dependencies:
     create-hmac "^1.1.2"
+
+perfect-scrollbar@~0.6.0:
+  version "0.6.16"
+  resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-0.6.16.tgz#b1d61a5245cf3962bb9a8407a3fc669d923212fc"
 
 performance-now@^0.2.0:
   version "0.2.0"

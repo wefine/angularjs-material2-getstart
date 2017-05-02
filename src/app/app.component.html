@@ -1,32 +1,10 @@
-<div>
-    <md-toolbar color="primary">
-        <span>
-            <md-icon>mood</md-icon>
-            <md-icon>face</md-icon>
-        </span>
-
-        <span>Yay, Material in Angular 2!</span>
-        <span>显示的中文要漂亮!</span>
-
-        <button md-icon-button [md-menu-trigger-for]="menu">
-            <md-icon>more_vert</md-icon>
-        </button>
-    </md-toolbar>
-    <md-menu x-position="before" #menu="mdMenu">
-        <button md-menu-item>Option 1</button>
-        <button md-menu-item>Option 2</button>
-    </md-menu>
-
-    <md-card>
-        <button md-button>All</button>
-        <button md-raised-button>Of</button>
-        <button md-raised-button color="primary">The</button>
-        <button md-raised-button color="accent">Buttons</button>
-    </md-card>
-
-    <span class="done">
-    <button md-fab>
-      <md-icon>check circle</md-icon>
-    </button>
-  </span>
-</div>
+<md-sidenav-container class="example-container">
+    <toolbar [sidenav]="sidenav" [title]="title"></toolbar>
+    <md-sidenav class.sm="sidenav-sm" class.xs="sidenav-xs" class.md="sidenav.md" [mode]="mode" [opened]="opened"
+                #sidenav class="z-depth-3 example-sidenav">
+        <sidenav></sidenav>
+    </md-sidenav>
+    <div class="example-sidenav-content">
+        <dashboard></dashboard>
+    </div>
+</md-sidenav-container>
