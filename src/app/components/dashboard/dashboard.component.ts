@@ -8,14 +8,17 @@ import { PerfectScrollbarConfigInterface } from "angular2-perfect-scrollbar";
 export class DashboardComponent implements OnInit {
 
     scrollbaConfig: PerfectScrollbarConfigInterface = {
-        wheelSpeed: 20
+        wheelSpeed: 1
     };
+
+    lat: number = -23.5489;
+    lng: number = -46.6388;
+    zoom: number = 15;
 
     // lineChart
     public lineChartData: Array<any> = [
         {data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A'},
-        {data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'},
-        {data: [18, 48, 77, 9, 100, 27, 40], label: 'Series C'}
+        {data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'}
     ];
     public lineChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
     public lineChartOptions: any = {
@@ -48,13 +51,26 @@ export class DashboardComponent implements OnInit {
             pointHoverBorderColor: 'rgba(148,159,177,0.8)'
         }
     ];
-    public lineChartLegend: Boolean = true;
+    public lineChartLegend: Boolean = false;
     public lineChartType: String = 'line';
 
+    private options: Object;
+    private chart: Object;
+
     constructor() {
+        this.options = {
+            title: {text: 'simple chart'},
+            series: [{
+                data: [29.9, 71.5, 106.4, 129.2],
+            }]
+        };
     }
 
     ngOnInit() {
+    }
+
+    public saveInstance(chartInstance) {
+        this.chart = chartInstance;
     }
 
     public randomize(): void {

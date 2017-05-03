@@ -1,12 +1,13 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
-import { MaterialModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { PerfectScrollbarModule } from "angular2-perfect-scrollbar";
 import { ChartsModule } from "ng2-charts";
+import { ChartModule } from "angular2-highcharts";
 
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { MdCardModule } from "@angular/material";
 
 @NgModule({
     declarations: [
@@ -14,11 +15,12 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
     ],
     imports: [
         BrowserModule,
-        MaterialModule,
         FlexLayoutModule,
         CommonModule,
         PerfectScrollbarModule,
-        ChartsModule
+        ChartsModule,
+        ChartModule,
+        MdCardModule
     ],
     exports: [
         DashboardComponent

@@ -1,98 +1,108 @@
 <div fxLayout="column" class="scrollable-container">
-    <perfect-scrollbar fxFlex [config]="scrollbaConfig" scroll-padding="15" class="dashboard-content">
-        <div #cardsRow fxLayoutWrap fxLayout.gt-sm="row" fxLayout="column">
-            <div fxFlex.gt-sm="50" fxFlex.gt-md="25">
-                <md-card class="example-card">
-                    <md-card-header>
-                        <div md-card-avatar class="example-header-image "></div>
-                        <md-card-title>Shiba Inu</md-card-title>
-                        <md-card-subtitle>Dog Breed</md-card-subtitle>
-                    </md-card-header>
-                    <md-card-content>
-                        <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
-                            Japan. A small, agile dog that copes
-                            very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-                        </p>
-                    </md-card-content>
-                    <md-card-actions>
-                        <button md-button>LIKE</button>
-                        <button md-button>SHARE</button>
-                    </md-card-actions>
-                </md-card>
-            </div>
-            <div fxFlex.gt-sm="50" fxFlex.gt-md="25">
-                <md-card class="example-card">
-                    <md-card-header>
-                        <div md-card-avatar class="example-header-image "></div>
-                        <md-card-title>Shiba Inu</md-card-title>
-                        <md-card-subtitle>Dog Breed</md-card-subtitle>
-                    </md-card-header>
-                    <md-card-content>
-                        <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
-                            Japan. A small, agile dog that copes
-                            very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-                        </p>
-                    </md-card-content>
-                    <md-card-actions>
-                        <button md-button>LIKE</button>
-                        <button md-button>SHARE</button>
-                    </md-card-actions>
-                </md-card>
-            </div>
-            <div fxFlex.gt-sm="50" fxFlex.gt-md="25">
-                <md-card class="example-card">
-                    <md-card-header>
-                        <div md-card-avatar class="example-header-image "></div>
-                        <md-card-title>Shiba Inu</md-card-title>
-                        <md-card-subtitle>Dog Breed</md-card-subtitle>
-                    </md-card-header>
-                    <md-card-content>
-                        <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
-                            Japan. A small, agile dog that copes
-                            very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-                        </p>
-                    </md-card-content>
-                    <md-card-actions>
-                        <button md-button>LIKE</button>
-                        <button md-button>SHARE</button>
-                    </md-card-actions>
-                </md-card>
-            </div>
-            <div fxFlex.gt-sm="50" fxFlex.gt-md="25">
-                <md-card class="example-card">
-                    <md-card-header>
-                        <div md-card-avatar class="example-header-image "></div>
-                        <md-card-title>Shiba Inu</md-card-title>
-                        <md-card-subtitle>Dog Breed</md-card-subtitle>
-                    </md-card-header>
-                    <md-card-content>
-                        <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
-                            Japan. A small, agile dog that copes
-                            very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-                        </p>
-                    </md-card-content>
-                    <md-card-actions>
-                        <button md-button>LIKE</button>
-                        <button md-button>SHARE</button>
-                    </md-card-actions>
-                </md-card>
-            </div>
+    <perfect-scrollbar fxFlex [config]="scrollbaConfig" scroll-padding="25" class="dashboard-content">
+        <div #cardsRow fxLayout.gt-sm="row" fxLayout="column" class="row">
+            <md-card fxFlex.gt-sm="50" fxFlex.gt-md="25" class="example-card">
+                <md-card-title>Card 1</md-card-title>
+            </md-card>
+            <md-card fxFlex.gt-sm="50" fxFlex.gt-md="25" class="example-card">
+                <md-card-title>Card 2</md-card-title>
+            </md-card>
+            <md-card fxFlex.gt-sm="50" fxFlex.gt-md="25" class="example-card">
+                <md-card-title>Card 3</md-card-title>
+            </md-card>
+            <md-card fxFlex.gt-sm="50" fxFlex.gt-md="25" class="example-card">
+                <md-card-title>Card 4</md-card-title>
+            </md-card>
         </div>
-        <div #chartsRow fxLayoutWrap fxLayout.gt-md="row" fxLayout="column" style="display: block;">
-            <canvas baseChart
-                    fxFlex="50"
-                    [datasets]="lineChartData"
-                    [labels]="lineChartLabels"
-                    [options]="lineChartOptions"
-                    [colors]="lineChartColors"
-                    [legend]="lineChartLegend"
-                    [chartType]="lineChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"></canvas>
+        <div #cardsRow fxLayout.gt-sm="row" fxLayout="column" class="row">
+            <md-card fxFlex.gt-sm="50" fxFlex.gt-md="25" class="example-card">
+                <md-card-header>
+                    <div md-card-avatar class="example-header-image"></div>
+                    <md-card-title>Shiba Inu</md-card-title>
+                    <md-card-subtitle>Dog Breed</md-card-subtitle>
+                </md-card-header>
+                <img md-card-image src="assets/img/examples/shiba2.jpg">
+                <md-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A
+                        small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                        bred for hunting.
+                    </p>
+                </md-card-content>
+                <md-card-actions>
+                    <button md-button>LIKE</button>
+                    <button md-button>SHARE</button>
+                </md-card-actions>
+            </md-card>
+            <md-card fxFlex.gt-sm="50" fxFlex.gt-md="25" class="example-card">
+                <md-card-header>
+                    <div md-card-avatar class="example-header-image"></div>
+                    <md-card-title>Shiba Inu</md-card-title>
+                    <md-card-subtitle>Dog Breed</md-card-subtitle>
+                </md-card-header>
+                <img md-card-image src="assets/img/examples/shiba2.jpg">
+                <md-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A
+                        small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                        bred for hunting.
+                    </p>
+                </md-card-content>
+                <md-card-actions>
+                    <button md-button>LIKE</button>
+                    <button md-button>SHARE</button>
+                </md-card-actions>
+            </md-card>
+            <md-card fxFlex.gt-sm="50" fxFlex.gt-md="25" class="example-card">
+                <md-card-header>
+                    <div md-card-avatar class="example-header-image"></div>
+                    <md-card-title>Shiba Inu</md-card-title>
+                    <md-card-subtitle>Dog Breed</md-card-subtitle>
+                </md-card-header>
+                <img md-card-image src="assets/img/examples/shiba2.jpg">
+                <md-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A
+                        small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                        bred for hunting.
+                    </p>
+                </md-card-content>
+                <md-card-actions>
+                    <button md-button>LIKE</button>
+                    <button md-button>SHARE</button>
+                </md-card-actions>
+            </md-card>
+            <md-card fxFlex.gt-sm="50" fxFlex.gt-md="25" class="example-card">
+                <md-card-header>
+                    <div md-card-avatar class="example-header-image"></div>
+                    <md-card-title>Shiba Inu</md-card-title>
+                    <md-card-subtitle>Dog Breed</md-card-subtitle>
+                </md-card-header>
+                <img md-card-image src="assets/img/examples/shiba2.jpg">
+                <md-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A
+                        small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                        bred for hunting.
+                    </p>
+                </md-card-content>
+                <md-card-actions>
+                    <button md-button>LIKE</button>
+                    <button md-button>SHARE</button>
+                </md-card-actions>
+            </md-card>
+        </div>
+        <div #chartsRow fxLayoutWrap fxLayout.gt-md="row" fxLayout="column" style="display: block;" class="row">
+            <md-card class="chart-card" fxFlex>
+                <md-card-title>Chart</md-card-title>
+                <canvas baseChart style="height: 300px; width: 100%;" [datasets]="lineChartData"
+                        [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"
+                        [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+            </md-card>
+        </div>
+        <div style="height: 100px; align-content: flex-start" fxFlex>
+            <span>Designed by Victor Prado</span>
         </div>
     </perfect-scrollbar>
 </div>
