@@ -3,7 +3,13 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import {
-    MdButtonModule, MdCardModule, MdIconModule, MdMenuModule, MdSlideToggleModule,
+    MdButtonModule,
+    MdCardModule,
+    MdIconModule,
+    MdMenuModule,
+    MdSliderModule,
+    MdSlideToggleModule,
+    MdTabsModule,
     MdToolbarModule
 } from "@angular/material";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -25,7 +31,9 @@ import { AppComponent } from "./app.component";
         MdCardModule,
         MdIconModule,
         MdButtonModule,
-        MdSlideToggleModule
+        MdSliderModule,
+        MdSlideToggleModule,
+        MdTabsModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

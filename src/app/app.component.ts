@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {Http} from '@angular/http';
+import { Component } from "@angular/core";
+import { Http } from "@angular/http";
 
 @Component({
     selector: 'app-root',
@@ -9,12 +9,11 @@ import {Http} from '@angular/http';
 export class AppComponent {
     spaceScreens: Array<any>;
 
-    constructor(private http:Http) {
+    constructor(private http: Http) {
         this.http.get('http://localhost:3500/screenshots')
             .map(response => response.json())
             .subscribe(res => this.spaceScreens = res);
     }
-
 
     likeMe(i) {
         if (this.spaceScreens[i].liked == 0)
@@ -24,7 +23,7 @@ export class AppComponent {
     }
 
     deleteMe(i) {
-        this.spaceScreens.splice(i,1);
+        this.spaceScreens.splice(i, 1);
         console.log(i);
     }
 }
