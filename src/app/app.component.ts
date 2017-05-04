@@ -10,8 +10,8 @@ export class AppComponent {
     spaceScreens: Array<any>;
 
     constructor(private http:Http) {
-        this.http.get('data.json')
-            .map(response => response.json().screenshots)
+        this.http.get('http://localhost:3500/screenshots')
+            .map(response => response.json())
             .subscribe(res => this.spaceScreens = res);
     }
 
