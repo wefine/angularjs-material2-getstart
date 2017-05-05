@@ -3,6 +3,8 @@
 
 ## 使用Angular-CLI创建工程
 ```bash
+npm install -g angular-cli
+ng --version
 ng new material-app
 ```
 
